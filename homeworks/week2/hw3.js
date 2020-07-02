@@ -1,5 +1,10 @@
 function reverse(str) {
-  console.log(str.split("").reverse().join(""));
+	let result = '';
+	for(let i=str.length -1;i>=0;i--){  //由最後一個索引值往前輸出
+		result += str[i];
+	}
+	console.log(result);
+  // console.log(str.split("").reverse().join(""));
   /*
 	執行順序為：
 	1. split 分割字串 -> [h,e,l,l,o]
