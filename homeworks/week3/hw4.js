@@ -17,7 +17,6 @@ rl.on('close', function() {
   solve(lines)
 })
 
-// 上面都不用管，只需要完成這個 function 就好，可以透過 lines[i] 拿取內容
 function solve(lines) {
   let str = lines[0];
   if(reverse(str) === str){
