@@ -127,14 +127,14 @@ section h2{
 .evaluation__people{
 	position: absolute;
 	max-width: 100px;
-    left: 0;
-    right: 0;
-    top: -50px;
-    margin: 0 auto;
+	left: 0;
+  right: 0;
+  top: -50px;
+  margin: 0 auto;
 }
 .evaluation__people img{
-    border: 1px solid #d0d0d0;
-    border-radius: 50%;
+	border: 1px solid #d0d0d0;
+	border-radius: 50%;
 }
 .evaluation__people h3{
 	text-align: center;

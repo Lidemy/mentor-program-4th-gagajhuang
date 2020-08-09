@@ -14,6 +14,6 @@ CSS 每個元素所框起來的區塊，能夠顯示所有在區塊的 padding�
 ## 請問 position: static, relative, absolute 跟 fixed 的差別是什麼？
 - static:為預設值，不會被特別定位，跟著瀏覽器的預設。
 - relative:相對定位，跟 static 沒有太大區別，區別在於可調整 top、right、bottom、left，且不影響其他元素。
-- absolute:絕對定位，往上層元素找直到屬性 relative 為父層，依照父層進行位置設定，不影響其他元素。
+- absolute:絕對定位，absolute 的定位點是往上找第一個 position 不是 static 的元素，而不該說成父層，因為有可能不只是上一層。
 - fixed:絕對定位，依照 viewport 調整元素位置，當螢幕滾動時會被固定在螢幕中。
 - sticky:黏性定位，以往都需要使用 js 控制元素，當捲軸滾動到指定元素時，則會呈現像 fixed 一樣的效果
