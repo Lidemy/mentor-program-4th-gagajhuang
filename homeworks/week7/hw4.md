@@ -1,5 +1,6 @@
 ## 什麼是 DOM？
 DOM 全名為 Document Object Model 翻譯為文件物件模型，就是把一份 HTML 文件內的各個標籤，包括文字、圖片等等都定義成物件，而這些物件最終會形成一個樹狀結構。
+
 ![DOM](https://www.w3schools.com/js/pic_htmltree.gif)
 
 
@@ -7,9 +8,9 @@ DOM 全名為 Document Object Model 翻譯為文件物件模型，就是把一�
 - Document
 	指這份文件，也就是這份 HTML 檔的開端，所有的一切都會從 Document 開始往下進行。
 - Element
-	指文件內的各個標籤，因此像是 <div>、<p> 等等各種 HTML Tag 都是被歸類在 Element 裡面。
+	指文件內的各個標籤，因此像是 `<div>、<p>` 等等各種 HTML Tag 都是被歸類在 Element 裡面。
 - Text
-	就是指被各個標籤包起來的文字，舉例來說在 <h1>Hello World</h1> 中， Hello World 被 <h1> 這個 Element 包起來，因此 Hello World 就是此 Element 的 Text。
+	就是指被各個標籤包起來的文字，舉例來說在 `<h1>Hello World</h1>` 中， Hello World 被 `<h1>` 這個 Element 包起來，因此 Hello World 就是此 Element 的 Text。
 - Attribute
 	指各個標籤內的相關屬性。
 
