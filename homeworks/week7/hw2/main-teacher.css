@@ -1,5 +1,5 @@
-.section__question{
-  margin:0 auto;
+.section__question {
+  margin: 0 auto;
   width: 100%;
 }
 nav {
@@ -170,24 +170,24 @@ footer {
 }
 
 /*FAQ*/
-.section__question{
+.section__question {
   max-width: 800px;
   text-align: left;
   cursor: pointer;
 }
-.question__list{
-  margin:0.5rem 0;
+.question__list {
+  margin: 0.5rem 0;
   max-height: 500px;
-  transition:0.5s;
+  transition: 0.5s;
   overflow: hidden;
 }
-.question__list h3{
+.question__list h3 {
   color: #489846;
   font-size: 18px;
   font-weight: bold;
   line-height: 35px;
 }
-.question__list p{
+.question__list p {
   white-space: initial;
   margin-left: 2.5rem;
   line-height: 25px;
@@ -195,7 +195,7 @@ footer {
   padding: 5px 20px;
 }
 
-.hide-content{
+.hide-content {
   max-height: 35px;
 }
 
@@ -240,8 +240,8 @@ footer {
     flex-direction: column-reverse;
   }
   /*FAQ*/
-  .question__list p{
-    margin:0;
+  .question__list p {
+    margin: 0;
   }
 }
 @media (max-width: 375px) {

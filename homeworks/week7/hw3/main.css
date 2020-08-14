@@ -1,18 +1,18 @@
-body{
+body {
   background: #000;
   color: #fff;
 }
-section{
+section {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
 }
-h1{
+h1 {
   font-size: 30px;
   text-align: center;
   padding: 20px;
 }
-.input-block input{
+.input-block input {
   width: 100%;
   font-size: 20px;
   line-height: 30px;
@@ -22,39 +22,39 @@ h1{
   border: 0;
   margin: 20px 0;
 }
-.input-block input:focus{
+.input-block input:focus {
   outline: none;
   border-bottom: 1px solid #fff;
 }
-.list-block{
+.list-block {
   display: flex;
   justify-content: space-between;
   font-size: 20px;
 }
-input[type="checkbox"]{
+input[type="checkbox"] {
   visibility: hidden;
   width: 20px;
   height: 20px;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
-input[type="checkbox"]:after{
+input[type="checkbox"]:after {
   visibility: visible;
   content: "";
-  display:inline-block;
-  width:20px;
-  height:20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
   border: 1px solid #fff;
 }
 
-input[type="checkbox"]:checked:after{
-  background:url('images/do.png') no-repeat center/cover;
+input[type="checkbox"]:checked:after {
+  background: url("images/do.png") no-repeat center/cover;
 }
-.list__content{
+.list__content {
   display: flex;
   align-items: center;
 }
-.btn-delete{
+.btn-delete {
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -65,19 +65,19 @@ input[type="checkbox"]:checked:after{
   font-size: 20px;
   letter-spacing: 2px;
   padding: 3px 5px;
-  transition: 0.3s
+  transition: 0.3s;
 }
-.btn-delete:before{
+.btn-delete:before {
   content: "\f00d";
-  font-family: 'Font Awesome\ 5 Free';
+  font-family: "Font Awesome\ 5 Free";
   font-weight: 900;
   padding-right: 3px;
 }
-.btn-delete:hover{
+.btn-delete:hover {
   color: #7ecef4;
 }
 
-.btn-delete:focus{
+.btn-delete:focus {
   outline: none;
 }
 .completed {
