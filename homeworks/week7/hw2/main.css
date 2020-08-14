@@ -1,0 +1,254 @@
+.section__question{
+  margin:0 auto;
+  width: 100%;
+}
+nav {
+  padding: 0 2%;
+  box-shadow: 3px 1px 5px #bbb;
+}
+.navbar__block {
+  max-width: 1280px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__name {
+  font-size: 30px;
+  color: #489846;
+}
+
+.navbar__list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  /* padding-inline-start: 0; */
+}
+.navbar__list ul li {
+  margin-left: 15px;
+}
+.navbar__list .active a,
+.navbar__list ul li a:hover {
+  background: #ff7286;
+  border-radius: 10px;
+  color: #fff;
+}
+.navbar__list ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: #000;
+  text-align: center;
+}
+header {
+  position: relative;
+  height: 580px;
+  background: url("./images/banner.jpg") no-repeat center/cover;
+}
+header:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+section {
+  text-align: center;
+}
+section h2 {
+  display: inline-block;
+  border-left: 15px solid #a3dea2;
+  font-size: 25px;
+  padding-left: 10px;
+  margin: 15px 0;
+}
+.section__block {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.section__block p {
+  white-space: pre-line;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.button__block {
+  display: inline-flex;
+  margin: 40px 0;
+}
+.btn__style {
+  padding: 40px 60px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #222222;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn__style:hover {
+  transform: scale(1.1);
+}
+.btn__order {
+  background: #e8b4b4;
+}
+.btn__check {
+  background: #b6ddd9;
+  margin-left: 20px;
+}
+.img__block {
+  display: flex;
+}
+.evaluation__block {
+  display: flex;
+}
+.evaluation__list {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  box-shadow: 2px 2px 5px #cecece;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  text-align: justify;
+}
+.evaluation__list + .evaluation__list {
+  margin-left: 30px;
+}
+.evaluation__people {
+  position: absolute;
+  max-width: 100px;
+  left: 0;
+  right: 0;
+  top: -50px;
+  margin: 0 auto;
+}
+.evaluation__people img {
+  border: 1px solid #d0d0d0;
+  border-radius: 50%;
+}
+.evaluation__people h3 {
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.evaluation__list p {
+  padding: 80px 15px 10px 15px;
+}
+footer {
+  background: #e4e4e4;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__right {
+  text-align: right;
+  line-height: 30px;
+}
+
+.footer__bottom {
+  text-align: center;
+  background: #489846;
+  color: #fff;
+  padding: 20px 10px;
+  line-height: 20px;
+}
+
+/*FAQ*/
+.section__question{
+  max-width: 800px;
+  text-align: left;
+  cursor: pointer;
+}
+.question__list{
+  margin:0.5rem 0;
+  transition:0.5s;
+  overflow: hidden;
+}
+.question__list h3{
+  color: #489846;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 35px;
+}
+.question__list p{
+  white-space: initial;
+  margin-left: 2.5rem;
+  line-height: 25px;
+  border: 1px solid #a3dea2;
+  padding: 5px 20px;
+  transition:0.5s;
+  opacity: 0;
+  display: none;
+}
+.question__list:first-child p{
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0;
+  }
+  .navbar__block {
+    height: 100px;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+  }
+  .navbar__name {
+    padding-top: 10px;
+  }
+  .navbar__list {
+    width: 100%;
+  }
+  .navbar__list ul li {
+    margin-left: 0;
+    width: 100%;
+  }
+  .navbar__list .active a,
+  .navbar__list ul li a:hover {
+    border-radius: 0;
+  }
+  .section__block p {
+    text-align: justify;
+  }
+  .img__block,
+  .evaluation__block {
+    flex-direction: column;
+  }
+  .evaluation__list + .evaluation__list {
+    margin: 80px 0 0 0;
+  }
+  .footer__right {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .footer__top {
+    flex-direction: column-reverse;
+  }
+  /*FAQ*/
+  .question__list p{
+    margin:0;
+  }
+}
+@media (max-width: 375px) {
+  .btn__style {
+    padding: 40px 50px;
+    line-height: 30px;
+  }
+}
