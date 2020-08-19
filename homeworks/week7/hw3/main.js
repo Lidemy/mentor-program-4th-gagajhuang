@@ -45,14 +45,17 @@ function checkedList(e) {
   const listContent = e.target.parentNode;
   const thisInput = listContent.querySelector('input');
   const thisP = listContent.querySelector('p');
-
-  // thisInput.checked = !thisInput.checked;
-
-  if (thisInput.checked == true) {
-    thisP.classList.add('completed');
-  } else {
-    thisP.classList.remove('completed');
+  // console.log(e.target.tagName);
+  
+  if(e.target.tagName == "P" || e.target.tagName == "DIV"){
+    thisInput.checked = !thisInput.checked;
   }
+  thisP.classList.toggle('completed');
+  // if (thisInput.checked == true) {
+  //   thisP.classList.add('completed');
+  // } else {
+  //   thisP.classList.remove('completed');
+  // }
 }
 
 // Huli 範例修改

@@ -35,7 +35,6 @@ input[type="checkbox"] {
   visibility: hidden;
   width: 20px;
   height: 20px;
-  margin-right: 10px;
 }
 
 input[type="checkbox"]:after {
@@ -53,6 +52,9 @@ input[type="checkbox"]:checked:after {
 .list__content {
   display: flex;
   align-items: center;
+}
+.list__content p{
+  padding-left: 10px;
 }
 .btn-delete {
   display: flex;
