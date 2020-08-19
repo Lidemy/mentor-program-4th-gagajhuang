@@ -1,13 +1,13 @@
 /*eslint-disable*/
+// 下面是判斷「是否有樣式」，較不推薦
 const quesClick = document.querySelectorAll('.question__list');
-
 for (let i = 0; i < quesClick.length; i++) {
   quesClick[i].addEventListener('click', isHidden);
 }
 
-
 function isHidden(e) {
   // 取得 CSS 樣式，window.getComputedStyle
+  
   const styleStatus = window.getComputedStyle(this.children[1]).getPropertyValue("display");
   const arrowIcon = this.children[0].children[0];
 
