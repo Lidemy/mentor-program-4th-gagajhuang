@@ -16,10 +16,10 @@
 1. CORS：想開啟跨來源 HTTP 請求的話，Server 必須在 Response 的 Header 裡面加上 Access-Control-Allow-Origin: *。
 2. JSONP <script>，範例如下
 	```js
-		<script src="https://another-origin.com/api/games"></script>
-		<script>
-	  	console.log(response);
-		</script>
+	<script src="https://another-origin.com/api/games"></script>
+	<script>
+	  console.log(response);
+	</script>
 	```
 
 ## 為什麼我們在第四週時沒碰到跨網域的問題，這週卻碰到了？
