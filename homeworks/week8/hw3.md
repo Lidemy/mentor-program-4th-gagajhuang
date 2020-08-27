@@ -1,5 +1,5 @@
 ## 什麼是 Ajax？
-非同步 JavaScript 及 XML（Asynchronous JavaScript and XML，AJAX）並不能稱做是種「技術」，描述一種使用數個既有技術的**「新」方法**。
+非同步 JavaScript 及 XML（Asynchronous JavaScript and XML，AJAX）並不能稱做是種「技術」，描述一種使用數個既有技術的「新」方法。
 
 這些技術包括 HTML 或 XHTML、層疊樣式表、JavaScript、文件物件模型、XML、XSLT 以及最重要的 XMLHttpRequest 物件。
 當這些技術被結合在 Ajax 模型中，Web 應用程式便能快速、即時更動介面及內容，不需要重新讀取整個網頁，讓程式更快回應使用者的操作。
