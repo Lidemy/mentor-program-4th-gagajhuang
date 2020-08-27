@@ -1,0 +1,253 @@
+nav {
+  padding: 0 2%;
+  box-shadow: 3px 1px 5px #bbb;
+}
+.navbar__block {
+  max-width: 1280px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__name {
+  font-size: 30px;
+  color: #489846;
+}
+
+.navbar__list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  /* padding-inline-start: 0; */
+}
+.navbar__list ul li {
+  margin-left: 15px;
+}
+.navbar__list .active a,
+.navbar__list ul li a:hover {
+  background: #ff7286;
+  border-radius: 10px;
+  color: #fff;
+}
+.navbar__list ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: #000;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+}
+section h2 {
+  display: inline-block;
+  border-left: 15px solid #a3dea2;
+  font-size: 25px;
+  padding-left: 10px;
+  margin: 15px 0;
+}
+.section__block {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+.section__block p {
+  white-space: pre-line;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.award__block {
+  position: relative;
+  height: 800px;
+  background: url("./images/banner.jpg") no-repeat center/cover;
+  text-align: left;
+}
+.award__block:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.award__content{
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+}
+.hide__content{
+  display: none;
+}
+h3{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #5ec1b6;
+  font-size: 24px;
+  font-weight: bold;
+}
+.award__list > li{
+  padding: 20px 0;
+  border-bottom: 1px solid #dbdbdb;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+.award__list > li:last-child{
+  border-bottom: none;
+}
+.award__list > li span{
+  font-weight: bold;
+}
+.award__product > li span{
+  color: #489846
+}
+.award__product > li span:after{
+  content: "\f0da";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  padding:0 3px;
+}
+.button__award, .button__restart{
+  max-width: 420px;
+  margin: 0 auto;
+  width: 100%;
+  background: #e62a45;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button__award:hover, .button__restart:hover{
+  transform: scale(0.95)
+}
+.button__block {
+  display: inline-flex;
+  margin: 40px 0;
+}
+.btn__style {
+  padding: 40px 60px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #222222;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn__style:hover {
+  transform: scale(1.1);
+}
+.btn__order {
+  background: #e8b4b4;
+}
+.btn__check {
+  background: #b6ddd9;
+  margin-left: 20px;
+}
+
+/* 得獎畫面 */
+.result__block{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 30px;
+}
+.result__block p{
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.bg__first{
+  background: url("./images/01.jpg") no-repeat center/cover;
+}
+.bg__second{
+  background: url("./images/02.jpg") no-repeat center/cover;
+}
+.bg__third{
+  background: url("./images/03.jpg") no-repeat center/cover;
+}
+.bg__none{
+  background: #000;
+  color: #fff;
+}
+
+footer {
+  background: #e4e4e4;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__right {
+  text-align: right;
+  line-height: 30px;
+}
+
+.footer__bottom {
+  text-align: center;
+  background: #489846;
+  color: #fff;
+  padding: 20px 10px;
+  line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0;
+  }
+  .navbar__block {
+    height: 100px;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+  }
+  .navbar__name {
+    padding-top: 10px;
+  }
+  .navbar__list {
+    width: 100%;
+  }
+  .navbar__list ul li {
+    margin-left: 0;
+    width: 100%;
+  }
+  .navbar__list .active a,
+  .navbar__list ul li a:hover {
+    border-radius: 0;
+  }
+  .section__block p {
+    text-align: justify;
+  }
+  .img__block,
+  .evaluation__block {
+    flex-direction: column;
+  }
+  .award__block{
+    padding: 0 2%;
+  }
+  .evaluation__list + .evaluation__list {
+    margin: 80px 0 0 0;
+  }
+  .footer__right {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .footer__top {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 375px) {
+
+  .btn__style {
+    padding: 40px 50px;
+    line-height: 30px;
+  }
+}
