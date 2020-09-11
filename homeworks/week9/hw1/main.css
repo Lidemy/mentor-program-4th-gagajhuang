@@ -1,0 +1,129 @@
+
+.attation__block {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  background: #da6363;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+}
+main{
+  max-width: 800px;
+  margin: 60px auto 0 auto;
+  padding: 50px 30px;
+  box-shadow: 0 0 8px #dbdbdb;
+}
+section {
+  text-align: center;
+}
+.section__block {
+  
+}
+h1{
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+h3{
+  text-align: left;
+  margin-bottom: 20px;
+  color: #da6363;
+  font-size: 22px;
+  font-weight: bold;
+}
+.login__block, .login__user{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login__block{
+  margin-bottom: 15px;
+}
+.login__user p{
+  margin-right: 10px;
+}
+.btn{
+  border: 0;
+  color: #565656;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn + .btn{
+  margin-left: 10px;
+}
+.btn:hover{
+  background: #dbdbdb;
+}
+.btn:focus, textarea:focus{
+  outline: none;
+}
+.board__block{
+  text-align: left;
+  line-height: 30px;
+}
+.board__block span{
+  color: #d14d4d;
+  font-weight: bold;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+::placeholder {
+  color: #cdcdcd;
+  opacity: 1; /* Firefox */
+}
+.hr{
+  border-bottom: 1px solid #e0e0e0;
+  margin: 20px 0;
+}
+/* 使用者留言區 */
+.user__block{
+  display: flex;
+  margin-bottom: 30px;
+}
+.user_photo{
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #cdcdcd;
+  margin-right: 10px;
+}
+.user__content{
+  text-align: left;
+  line-height: 22px;
+}
+.user__name{
+  color: #5f77bc;
+  font-weight: bold;
+}
+.user__time{
+  color: #a5a5a5;
+  font-size: 12px;
+}
+.user__text{
+  word-break: break-all;
+  white-space: pre-line;
+}
+
+/* 註冊頁面 */
+.input__block{
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+
+}
+@media (max-width: 375px) {
+
+}
