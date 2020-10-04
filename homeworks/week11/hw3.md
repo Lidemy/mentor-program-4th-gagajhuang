@@ -33,17 +33,17 @@ include_once( )、require_once( )：在為主體 PHP 檔案包含進來的檔案
 解決方法：Double Submit Cookie，直接區分出這個 request 是不是從同樣的 domain 來。
 
 不用把這個值寫在 session 以外，同時也讓 client side 設定一個名叫 csrftoken 的 cookie，值也是同一組 token。
-`
+```
 Set-Cookie: csrftoken=fj1iro2jro12ijoi1
 <form action="https://small-min.blog.com/delete" method="POST">
   <input type="hidden" name="id" value="3"/>
   <input type="hidden" name="csrftoken" value="fj1iro2jro12ijoi1"/>
   <input type="submit" value="刪除文章"/>
 </form>
-`
+```
 
 ※chrome(51) 瀏覽器本身的防禦
 SameSite cookie，在 Cookie 的 header 中多加上 SameSite。
-`
+```
 Set-Cookie: session_id=vmcupz23o1; SameSite
-`
+```
