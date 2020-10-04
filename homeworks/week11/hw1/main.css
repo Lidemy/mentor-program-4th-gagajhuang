@@ -1,0 +1,231 @@
+
+.attation__block {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  background: #da6363;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+}
+main{
+  max-width: 800px;
+  margin: 60px auto 0 auto;
+  padding: 50px 30px;
+  box-shadow: 0 0 8px #dbdbdb;
+}
+
+.section__block {
+  
+}
+h1{
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+h3{
+  text-align: left;
+  margin-bottom: 20px;
+  color: #da6363;
+  font-size: 22px;
+  font-weight: bold;
+}
+.login__block, .login__user{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login__block{
+  margin-bottom: 15px;
+}
+.login__user p{
+  margin-right: 10px;
+}
+.btn{
+  border: 0;
+  color: #565656;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn + .btn{
+  margin-left: 10px;
+}
+.btn:hover{
+  background: #dbdbdb;
+}
+.btn:focus, textarea:focus{
+  outline: none;
+}
+.board__block{
+  text-align: left;
+  line-height: 30px;
+}
+.board__block span{
+  color: #d14d4d;
+  font-weight: bold;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+::placeholder {
+  color: #cdcdcd;
+  opacity: 1; /* Firefox */
+}
+.hr{
+  border-bottom: 1px solid #e0e0e0;
+  margin: 20px 0;
+}
+/* 使用者留言區 */
+.user__block, .user__left{
+  display: flex;
+  margin-bottom: 30px;
+}
+.user__block{
+  justify-content: space-between;
+}
+.user_photo{
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #cdcdcd;
+  margin-right: 10px;
+}
+.user__content{
+  text-align: left;
+  line-height: 22px;
+}
+.user__name{
+  color: #5f77bc;
+  font-weight: bold;
+}
+.user__time{
+  color: #a5a5a5;
+  font-size: 12px;
+}
+.user__text{
+  word-break: break-all;
+  white-space: pre-line;
+}
+
+/* 更新頁面 */
+.input__block{
+  margin-right: 5px;
+}
+.change__nickname, .manager__page{
+  /* background: #c6c9e8; */
+  background: #efefef;
+  padding: 7.5px;
+}
+
+.nickname__update{
+  display: flex;
+  align-items: center;
+}
+.hide{
+  display: none;
+}
+.manager__page{
+  background: #c6c9e8;
+}
+.manager__page:hover{
+  background: #aaafdf;
+}
+
+/* 編輯、刪除 */
+.btn__user{
+  display: flex;
+  align-items: end;
+}
+.btn__user a + a {
+  margin-left: 5px;
+}
+.btn-update{
+  color: #6f6f6f;
+  padding: 5px;
+}
+.btn-update:hover{
+  color: #fff;
+  background: #6f6f6f;
+}
+.btn-delete{
+  color: #F44336;
+  padding: 5px;
+}
+.btn-delete:hover{
+  color: #fff;
+  background: #F44336;
+}
+
+/* 分頁頁數 */
+.page__block{
+  text-align: center;
+}
+.page__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.page__list a{
+  color: #5f77bc;
+  font-weight: bold;
+}
+.page__list a:hover{
+  color: #c6c9e8;
+}
+.page__list a + a{
+  margin-left: 5px;
+}
+.page__list a + a:before{
+  content: '';
+  display: inline-flex;
+  height: 12px;
+  margin-right: 5px;
+  cursor: auto;
+  color: #7b7b7b;
+  border-left: 1px solid;
+}
+select{
+  font-size: 16px;
+  line-height: 20px;
+  padding: 2px;
+}
+/* 管理者介面 */
+table{
+  width: 100%;
+  text-align: center;
+}
+.user__list .btn{
+  margin-left: 10px;
+}
+th{
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #e0e0e0;
+}
+td{
+  line-height: 55px;
+}
+.gohome a{
+  background: #da6363;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 375px) {
+
+}
