@@ -141,7 +141,7 @@
 				$result = $stmt->execute();
 				$result = $stmt->get_result();
 				$row = $result->fetch_assoc();
-				print_r($row);
+				// print_r($row);
 				
 				$count = $row['count'];
 				$total_page = intval(ceil($count / $items_per_page)); // 無條件進位
