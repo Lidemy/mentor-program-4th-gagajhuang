@@ -89,6 +89,9 @@ textarea{
   display: flex;
   margin-bottom: 30px;
 }
+.user__left{
+  width: 85%;
+}
 .user__block{
   justify-content: space-between;
 }
@@ -102,6 +105,8 @@ textarea{
 .user__content{
   text-align: left;
   line-height: 22px;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 .user__name{
   color: #5f77bc;
@@ -112,7 +117,7 @@ textarea{
   font-size: 12px;
 }
 .user__text{
-  word-break: break-all;
+  /* word-break: break-all; */
   white-space: pre-line;
 }
 

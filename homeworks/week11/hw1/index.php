@@ -55,7 +55,7 @@
 						<p>你好！
 							<span>
 								<?php 
-									echo $user['nickname'];
+									echo escape($user['nickname']);
 								?>
 							</span>
 						</p>
@@ -114,7 +114,7 @@
 								<?php echo escape($row['created_at']) ?>
 							</div>
 						</div>
-						<p class="user__text"><?php echo escape($row['content']) ?></p>
+						<div class="user__text"><?php echo escape($row['content']) ?></div>
 					</div>
 				</div>
 				<?php 
@@ -141,7 +141,7 @@
 				$result = $stmt->execute();
 				$result = $stmt->get_result();
 				$row = $result->fetch_assoc();
-				print_r($row);
+				// print_r($row);
 				
 				$count = $row['count'];
 				$total_page = intval(ceil($count / $items_per_page)); // 無條件進位
