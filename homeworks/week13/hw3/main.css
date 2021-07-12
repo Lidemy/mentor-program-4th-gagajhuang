@@ -1,0 +1,139 @@
+body{
+  background: url('./images/bg.png') repeat-y top/cover #171717;
+}
+nav {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+  box-shadow: 3px 1px 5px #bbb;
+  background: #fff;
+}
+.navbar__block {
+  position: relative;
+  padding: 0 2%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__name {
+  font-size: 30px;
+}
+
+.menu__ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.menu__ul li{
+  display: block;
+  text-decoration: none;
+  padding: 0 10px;
+  margin-left: 15px;
+  color: #000;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer
+}
+.menu__ul li:hover, .menu__ul li.active{
+  background: #8a829b;
+  color: #fff;
+}
+.menu__block{
+  display: none;
+}
+section {
+  text-align: center;
+  margin-top: 60px;
+}
+.section__block {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+.title{
+ color: #fff;
+}
+.title h1{
+  font-size: 30px;
+}
+.title p{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.master__list{
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.master__block{
+  width: 25%;
+  padding: 10px;
+}
+.master__infor{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+}
+.master__photo{
+  max-width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.master__text{
+  overflow: hidden
+}
+.master__title{
+  font-size: 18px;
+  line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.master__name{
+  font-size: 13px;
+  padding-top: 10px;
+}
+@media (max-width: 1280px){
+  .menu__ul {
+    display: none;
+  }
+  .menu__ul li{
+    margin-left: 0;
+  }
+  .menu__block{
+    display: block;
+    font-size: 30px;
+    cursor: pointer
+  }
+  .menu__show{
+    display: block;
+    position: absolute;
+    background: #fff;
+    top: 60px;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 1024px){
+  .master__block{
+    width: 33.3%;
+  }
+}
+@media (max-width: 768px) {
+  .master__block{
+    width: 50%;
+  }
+}
+@media (max-width: 640px) {
+  .master__block{
+    width: 100%;
+  }
+}

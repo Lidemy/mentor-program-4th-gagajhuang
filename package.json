@@ -42,5 +42,6 @@
   "description": "備註：十六週以後的課程尚未完成，作業也還沒決定",
   "directories": {
     "example": "examples"
-  }
+  },
+  "keywords": []
 }

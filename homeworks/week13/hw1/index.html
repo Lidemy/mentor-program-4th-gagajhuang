@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>留言板</title> 
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="main-real.css"> -->
+</head>
+<body>
+	<header class="attation__block">注意！本站為練習用網站，因教學用途刻意忽略資安的實作，註冊時請勿使用任何真實的帳號密碼。</header>
+	<main>
+		<section>
+			<div class="login__block">
+				<h1>留言板 Comments</h1>
+				<div class="login__user">
+					<button class="btn btn__login"><a href="login.php">登入</a></button>
+						<button class="btn btn__register"><a href="register.php">註冊</a></button>
+						<p>你好！
+						</p>
+						<button class="btn btn__login"><a href="logout.php">登出</a></button>
+						<div class="btn change__nickname">編輯暱稱</div>
+							<div class="btn manager__page"><a href="admin.php">會員管理</a></div>
+				</div>
+			</div>
+				<form method="POST" action="update_user.php" class="hide nickname__update">
+					<div class="input__block">輸入新的暱稱：<input type="text" name="nickname"></div>
+					<input class="btn" type="submit" name="submit" value="更新暱稱">
+				</form>
+				<p>您已被停權發言！</p>
+			<form class="board__block" method="POST" action="handle_add_post.php">
+				<p>想說什麼呢？</p>
+				<textarea name="content" rows="5" placeholder="請輸入文字..."></textarea>
+				<input class="btn" type="submit" name="submit" value="送出">
+			</form>
+				<h3>請先登入會員!</h3>
+			<div class="hr"></div>
+		</section>
+
+		<section>
+			<div class="user__block">
+				<div class="user__left">
+					<div class="user__photo"></div>
+					<div class="user__content">
+						<div class="user_infor">
+							<div class="user__name">aaaa
+							</div>
+							<div class="user__time">aaa/aaa
+							</div>
+						</div>
+						<div class="user__text">asdasgfsgfsdgfdhgserger</div>
+					</div>
+				</div>
+					<div class="btn__user">
+						<a class="btn-update"href="update_comment.php?id=<?php echo $row['id']?>">編輯</a>
+						<a class="btn-delete" href="handle_delete_comment.php?id=<?php echo $row['id']?>">刪除</a>
+					</div>
+			</div>
+			<div class="hr"></div>
+		</section>
+		<section class="page__block">
+			<div>
+				<span>總共有 2 筆留言，</span>
+				<span>目前頁數：2</span>
+			</div>
+			<div class="page__list">
+					<a href="index.php?page=1">首頁</a>
+					<a href="index.php?page=2">上一頁</a>
+					<a href="index.php?page=3">下一頁</a>
+					<a href="index.php?page=4">最末頁</a>
+			</div>
+		</section>
+	</main>
+	
+  <script src="https://kit.fontawesome.com/e66939fe7a.js" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
